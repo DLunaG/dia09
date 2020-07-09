@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Array2 {
 
@@ -6,7 +7,10 @@ public class Array2 {
         //Crea una array y suma todos sus elementos y saca la media.
 
         //Creación de variables
-        int[] matriz = new int[10];
+        //Pregunta de cuantos numeros quieres generar
+        Scanner sc = new Scanner(System.in);
+        int cant = sc.nextInt();
+        int[] matriz = new int[cant];
         int suma = 0;
         float media;
 
